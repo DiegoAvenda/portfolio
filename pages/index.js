@@ -11,7 +11,7 @@ import cyborg from "../public/cyborg.png";
 import flyingCar from "../public/flyingCar.png";
 import skyScraper from "../public/skyScraper.png";
 import neoDiego from "../public/neoDiego.png";
-import web2 from "../public/web2.png";
+import novastra from "../public/novastra.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
@@ -68,7 +68,12 @@ export default function Home() {
             <AiFillLinkedin />
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:w-96 md:h-96">
-            <Image src={cyberpunk} layout="fill" objectFit="cover" />
+            <Image
+              src={cyberpunk}
+              layout="fill"
+              alt="cyberpunk"
+              objectFit="cover"
+            />
           </div>
         </section>
 
@@ -90,7 +95,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
-              <Image src={cyborg} width={100} height={100} />
+              <Image src={cyborg} alt="cyborg" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Beatufil designs
               </h3>
@@ -105,7 +110,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">SASS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
-              <Image src={flyingCar} width={100} height={100} />
+              <Image src={flyingCar} alt="flyingCar" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Code your dream project
               </h3>
@@ -120,7 +125,12 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">Typescript</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
-              <Image src={skyScraper} width={100} height={100} />
+              <Image
+                src={skyScraper}
+                alt="skyScraper"
+                width={100}
+                height={100}
+              />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Consulting
               </h3>
@@ -158,9 +168,22 @@ export default function Home() {
                 <Image
                   className="rounded-lg object-cover"
                   width={"100%"}
+                  alt="neoDiego"
                   height={"100%"}
                   layout="responsive"
                   src={neoDiego}
+                />
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a href="https://hydrogen-sage.vercel.app/">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  alt="novastra"
+                  src={novastra}
                 />
               </a>
             </div>
@@ -169,15 +192,7 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt="example"
                 layout="responsive"
                 src={web3}
               />
@@ -186,6 +201,7 @@ export default function Home() {
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
+                alt="example"
                 height={"100%"}
                 layout="responsive"
                 src={web4}
@@ -195,6 +211,7 @@ export default function Home() {
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
+                alt="example"
                 height={"100%"}
                 layout="responsive"
                 src={web5}
@@ -205,6 +222,7 @@ export default function Home() {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
+                alt="example"
                 layout="responsive"
                 src={web6}
               />
